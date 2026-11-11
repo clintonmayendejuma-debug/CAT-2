@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>University Student Information Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+
+    <header id="home">
+        <h1>Masinde Muliro University</h1>
+        <h2>University Student Information Portal</h2>
+        <p>Welcome to our Student Information System</p>
+    </header>
+
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#registration">Student Registration</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <main>
+
+       
+        <section id="about">
+            <h2>About Us</h2>
+
+            <p>
+                The Student Information Portal is a web-based
+                system designed to manage student information,
+                academic programmes and registration details
+                efficiently.
+            </p>
+
+           
+            <h3>Academic Programmes Offered</h3>
+
+            <ul>
+                <li>Computer Science</li>
+                <li>Education</li>
+                <li>Business Administration</li>
+                <li>Nursing</li>
+            </ul>
+        </section>
+
+        
+        <section id="students">
+            <h2>Student Information</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Student Name</th>
+                            <th>Registration Number</th>
+                            <th>Programme</th>
+                            <th>Year of Study</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>John Kamau</td>
+                            <td>COM/B/00-00000/2025</td>
+                            <td>Computer science</td>
+                            <td>Year 2</td>
+                        </tr>
+
+                        <tr>
+                            <td>002</td>
+                            <td>Mary Wanjiku</td>
+                            <td>BED/B/01-00012/2026</td>
+                            <td>Education</td>
+                            <td>Year 1</td>
+                        </tr>
+
+                        <tr>
+                            <td>003</td>
+                            <td>Peter Otieno</td>
+                            <td>BBA/B/01-01003/2024</td>
+                            <td>Business Administration</td>
+                            <td>Year 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        
+        <section id="registration">
+            <h2>Student Registration Form</h2>
+
+            <form id="registrationForm" novalidate>
+
+                
+                <label for="studentName">Full Name:</label>
+                <input type="text" id="studentName" placeholder="Enter your full name">
+
+                
+                <label for="regNumber">Registration Number:</label>
+                <input type="text" id="regNumber" placeholder="Enter registration number">
+
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                
+                <label>Gender:</label>
+
+                <div class="gender-options">
+                    <label>
+                        <input type="radio" name="gender" value="Male">
+                        Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="Female">
+                        Female
+                    </label>
+                </div>
+
+                
+                <label for="programme">Academic Programme:</label>
+
+                <select id="programme">
+                    <option value="">Select Programme</option>
+                    <option>Computer science</option>
+                    <option>Education</option>
+                    <option>Business Administration</option>
+                    <option>Nursing</option>
+                </select>
+
+                
+                <div class="form-buttons">
+                    <button type="submit">Submit Registration</button>
+                    <button type="reset">Reset</button>
+                </div>
+
+            </form>
+
+            
+            <div id="output" aria-live="polite"></div>
+
+        </section>
+
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@masindemulirouniversity.ac.ke</p>
+            <p>Phone: 0700000000</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Masinde Muliro University. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
